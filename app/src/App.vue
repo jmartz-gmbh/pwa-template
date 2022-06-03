@@ -6,7 +6,7 @@
     <main class="mx-auto max-w-5xl bg-white px-2 py-2 mt-2 min-h-screen">
       <router-view></router-view>
     </main>
-    <footer class="mx-auto max-w-5xl bg-white px-2 py-2 mb-2 mt-2">
+    <footer class="mx-auto max-w-5xl bg-white px-2 py-2 mt-2">
       <footer-general></footer-general>
     </footer>
   </div>
