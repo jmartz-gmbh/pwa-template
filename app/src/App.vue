@@ -12,7 +12,6 @@
   </div>
 </template>
 <script>
-import welcome from "./components/welcome.vue";
 import header from "./components/header.vue";
 import footer from "./components/footer.vue";
 
