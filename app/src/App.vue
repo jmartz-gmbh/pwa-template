@@ -23,6 +23,11 @@ export default {
     "header-general": header,
     "footer-general": footer,
   },
+  watch: {
+    $route: function(){
+      window.scrollTo({top: 0, behavior: 'smooth'});
+    }
+  }
 };
 </script>
 
