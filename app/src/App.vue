@@ -1,21 +1,34 @@
-<script setup>
-// This starter template is using Vue 3 <script setup> SFCs
-// Check out https://vuejs.org/api/sfc-script-setup.html#script-setup
-import HelloWorld from './components/HelloWorld.vue'
+<template>
+  <div class="app">
+    <header class="mx-auto max-w-5xl bg-white px-2 py-2">
+      <header-general></header-general>
+    </header>
+    <main class="mx-auto max-w-5xl bg-white px-2 py-2 mt-2 min-h-screen">
+      <router-view></router-view>
+    </main>
+    <footer class="mx-auto max-w-5xl bg-white px-2 py-2 mb-2 mt-2">
+      <footer-general></footer-general>
+    </footer>
+  </div>
+</template>
+<script>
+import welcome from "./components/welcome.vue";
+import header from "./components/header.vue";
+import footer from "./components/footer.vue";
+
+import "./tailwind.css";
+export default {
+  name: "App",
+  components: {
+    "header-general": header,
+    "footer-general": footer,
+  },
+};
 </script>
 
-<template>
-  <img alt="Vue logo" src="./assets/logo.png" />
-  <HelloWorld msg="Hello Vue 3 + Vite" />
-</template>
-
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+<style lang="less">
+.app {
+  background: linear-gradient(-45deg, #ee7752, #e73c7e);
+  background-size: auto;
 }
 </style>
