@@ -1,7 +1,7 @@
 import { createApp } from "vue";
 import App from "./App.vue";
-import store from "./store";
 import routes from "./routes";
+import { createPinia } from "pinia";
 
 /* import the fontawesome core */
 import { library } from "@fortawesome/fontawesome-svg-core";
@@ -28,5 +28,5 @@ const app = createApp(App);
 app.use(plausible, plausibleOptions);
 app.component("fa", FontAwesomeIcon);
 app.use(routes);
-app.use(store);
+app.use(createPinia());
 app.mount("#app");
