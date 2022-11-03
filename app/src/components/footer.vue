@@ -8,7 +8,7 @@
       <div class="col-span-8 md:col-span-2"></div>
       <div class="col-span-8 md:col-span-2">
         Copyright by
-        <a href="http://www.jmartz.gmbh/" class="font-bold" target="_blank">Jmartz GmbH</a>
+        <a href="http://www.mkay-development.de/" class="font-bold" target="_blank">MkaY Development</a>
       </div>
     </div>
   </div>
