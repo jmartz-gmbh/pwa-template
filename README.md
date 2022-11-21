@@ -3,7 +3,6 @@
 ## Techstack:
 - VueJs
 - Vite
-- Vuex
-- Less
+- Pinia
 - Vue Router
 - Tailwind
