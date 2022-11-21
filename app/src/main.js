@@ -28,5 +28,9 @@ const app = createApp(App);
 app.use(plausible, plausibleOptions);
 app.component("fa", FontAwesomeIcon);
 app.use(routes);
-app.use(createPinia());
+const pinia = createPinia();
+pinia.use(({ store }) => {
+  store.router = router;
+});
+app.use(pinia);
 app.mount("#app");
