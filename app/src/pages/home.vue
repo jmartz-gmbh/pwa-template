@@ -6,11 +6,11 @@
 </template>
 
 <script>
-import welcome from "../components/welcome.vue";
+import welcome from '../components/welcome.vue';
 export default {
-  name: "Homepage",
+  name: 'Homepage',
   components: {
-    welcome: welcome,
-  },
+    welcome
+  }
 };
 </script>

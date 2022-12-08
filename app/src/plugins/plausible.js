@@ -8,5 +8,5 @@ export default {
     enableAutoPageviews();
 
     app.provide('plausible');
-  },
+  }
 };

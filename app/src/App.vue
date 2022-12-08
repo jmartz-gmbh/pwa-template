@@ -12,19 +12,19 @@
   </div>
 </template>
 <script>
-import header from "./components/header.vue";
-import footer from "./components/footer.vue";
+import header from './components/header.vue';
+import footer from './components/footer.vue';
 
-import "./tailwind.css";
+import './tailwind.css';
 export default {
-  name: "App",
+  name: 'App',
   components: {
-    "header-general": header,
-    "footer-general": footer,
+    'header-general': header,
+    'footer-general': footer
   },
   watch: {
-    $route: function(){
-      window.scrollTo({top: 0, behavior: 'smooth'});
+    $route: function () {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
     }
   }
 };
